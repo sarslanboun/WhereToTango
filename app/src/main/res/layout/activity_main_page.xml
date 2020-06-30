@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/mainPageSchoolsButton"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageSchoolsClick"
+                app:srcCompat="@drawable/image_schools" />
+
+            <ImageButton
+                android:id="@+id/mainPageLessonsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageLessonsClick"
+                app:srcCompat="@drawable/image_lessons" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/mainPageMilongasButton"
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageMilongasClick"
+                app:srcCompat="@drawable/image_milonga" />
+
+            <ImageButton
+                android:id="@+id/mainPageFestivalsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageFestivalsClick"
+                app:srcCompat="@drawable/image_festival" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/mainPageStoresButton"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageStoresClick"
+                app:srcCompat="@drawable/image_store" />
+
+            <ImageButton
+                android:id="@+id/mainPageProfileButton"
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mainPageProfileClick"
+                app:srcCompat="@drawable/image_logout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mainActivityDancerSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mainActivityDancerSignInClick"
+                android:text="sign in" />
+
+            <Button
+                android:id="@+id/mainActivityDancerRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mainActivityDancerRegisterClick"
+                android:text="register" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="121dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mainActivityTeacherText"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="For Teacher, Seller and Organizer"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/mainActivityDancerText"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="For Social Dancer"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="141dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mainActivityTeacherSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mainActivityTeacherSignInClick"
+                android:text="sign in" />
+
+            <Button
+                android:id="@+id/mainActivityTeacherRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mainActivityTeacherRegisterClick"
+                android:text="register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

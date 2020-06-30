@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherSignInActivity">
+
+    <EditText
+        android:id="@+id/teacherSignInEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSignInBasicText" />
+
+    <EditText
+        android:id="@+id/teacherSignInPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/teacherSignInEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSignInEmailText" />
+
+    <Button
+        android:id="@+id/teacherSignInBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
+        android:onClick="teacherSignInBackClick"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="@+id/teacherSignInPasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSignInPasswordText" />
+
+    <Button
+        android:id="@+id/teacherSignInSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="teacherSignInSignInClick"
+        android:text="sign in"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teacherSignInBackButton"
+        app:layout_constraintEnd_toEndOf="@+id/teacherSignInPasswordText" />
+
+    <TextView
+        android:id="@+id/teacherSignInBasicText"
+        android:layout_width="209dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="71dp"
+        android:gravity="center"
+        android:text="For Teacher, Seller and Organizer"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

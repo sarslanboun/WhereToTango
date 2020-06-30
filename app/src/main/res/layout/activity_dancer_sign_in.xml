@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DancerSignInActivity">
+
+    <EditText
+        android:id="@+id/dancerSignInEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/dancerSignInBasicText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerSignInBasicText" />
+
+    <EditText
+        android:id="@+id/dancerSignInPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/dancerSignInEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerSignInEmailText" />
+
+    <TextView
+        android:id="@+id/dancerSignInBasicText"
+        android:layout_width="209dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="71dp"
+        android:gravity="center"
+        android:text="For Social Dancer"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dancerSignInSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dancerSignInSignInClick"
+        android:text="sign in"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dancerSignInBackButton"
+        app:layout_constraintEnd_toEndOf="@+id/dancerSignInPasswordText" />
+
+    <Button
+        android:id="@+id/dancerSignInBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="37dp"
+        android:onClick="dancerSignInBackClick"
+        android:text="back"
+        app:layout_constraintEnd_toStartOf="@+id/dancerSignInSignInButton"
+        app:layout_constraintTop_toBottomOf="@+id/dancerSignInPasswordText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

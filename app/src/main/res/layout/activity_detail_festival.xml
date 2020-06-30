@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFestivalActivity">
+
+    <TextView
+        android:id="@+id/detailFestivalEndDateView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailFestivalPhoneView"
+        app:layout_constraintStart_toStartOf="@+id/detailFestivalPhoneView"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalStartDateView" />
+
+    <fragment
+        android:id="@+id/mapDetailFestivalView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".DetailFestivalActivity" />
+
+    <ImageView
+        android:id="@+id/detailFestivalImageView"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/detailAboutFestivalView"
+        android:layout_width="0dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalPhoneView" />
+
+    <TextView
+        android:id="@+id/detailFestivalPhoneView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailAboutFestivalView"
+        app:layout_constraintStart_toStartOf="@+id/detailFestivalStartDateView"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalEndDateView" />
+
+    <TextView
+        android:id="@+id/detailFestivalStartDateView"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="6dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailFestivalCityView"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalCityView" />
+
+    <TextView
+        android:id="@+id/detailFestivalCityView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalNameView" />
+
+    <TextView
+        android:id="@+id/detailFestivalNameView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailAboutFestivalView"
+        app:layout_constraintStart_toStartOf="@+id/detailFestivalImageView"
+        app:layout_constraintTop_toBottomOf="@+id/detailFestivalImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLessonActivity">
+
+    <ImageButton
+        android:id="@+id/addLessonImageButton"
+        android:layout_width="234dp"
+        android:layout_height="181dp"
+        android:contentDescription="TODO"
+        android:onClick="addLessonImageClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/click_to_add_image" />
+
+    <EditText
+        android:id="@+id/addLessonLessonTopicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Lesson Topic"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addLessonImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/addLessonImageButton" />
+
+    <EditText
+        android:id="@+id/addLessonInstructorsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="274dp"
+        android:layout_marginBottom="210dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Instructors"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addLessonMapButton"
+        app:layout_constraintStart_toStartOf="@+id/addLessonLessonTopicText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addLessonPhoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/addLessonInstructorsText"
+        app:layout_constraintTop_toBottomOf="@+id/addLessonInstructorsText" />
+
+    <EditText
+        android:id="@+id/addLessonAboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="About Lecture"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addLessonMapButton"
+        app:layout_constraintStart_toStartOf="@+id/addLessonPhoneText"
+        app:layout_constraintTop_toBottomOf="@+id/addLessonPhoneText"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/addLessonMapButton"
+        android:layout_width="133dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="addLessonMapClick"
+        android:text="click here to add location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addLessonInstructorsText" />
+
+    <Button
+        android:id="@+id/addLessonSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addLessonSaveClick"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

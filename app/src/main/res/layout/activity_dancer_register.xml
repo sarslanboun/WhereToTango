@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DancerRegisterActivity">
+
+    <EditText
+        android:id="@+id/dancerRegisterEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/dancerRegisterBasicText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dancerRegisterBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:onClick="dancerRegisterBackClick"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="@+id/dancerPasswordConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerPasswordConfirmText" />
+
+    <EditText
+        android:id="@+id/dancerRegisterNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/dancerRegisterEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerRegisterEmailText" />
+
+    <EditText
+        android:id="@+id/dancerPasswordConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password Again"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/dancerRegisterPasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerRegisterPasswordText" />
+
+    <TextView
+        android:id="@+id/dancerRegisterBasicText"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="For Social Dancer"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/dancerRegisterEmailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dancerRegisterPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/dancerRegisterNameText"
+        app:layout_constraintTop_toBottomOf="@+id/dancerRegisterNameText" />
+
+    <Button
+        android:id="@+id/dancerRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="19dp"
+        android:onClick="dancerRegisterRegisterClick"
+        android:text="register"
+        app:layout_constraintStart_toEndOf="@+id/dancerRegisterBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/dancerPasswordConfirmText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailStoreActivity">
+
+    <fragment
+        android:id="@+id/mapDetailStoreView"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".DetailStoreActivity" />
+
+    <ImageView
+        android:id="@+id/detailStoreImageView"
+        android:layout_width="267dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/detailStorePhoneView"
+        android:layout_width="241dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailStoreTypeView" />
+
+    <TextView
+        android:id="@+id/detailAboutStoreView"
+        android:layout_width="244dp"
+        android:layout_height="184dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailStorePhoneView" />
+
+    <TextView
+        android:id="@+id/detailStoreTypeView"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailStorePhoneView"
+        app:layout_constraintStart_toStartOf="@+id/detailStorePhoneView"
+        app:layout_constraintTop_toBottomOf="@+id/detailStoreNameView" />
+
+    <TextView
+        android:id="@+id/detailStoreNameView"
+        android:layout_width="241dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailStoreImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

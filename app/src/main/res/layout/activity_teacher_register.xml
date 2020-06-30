@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherRegisterActivity">
+
+    <EditText
+        android:id="@+id/teacherRegisterEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/teacherRegisterBasicText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterBasicText" />
+
+    <Button
+        android:id="@+id/teacherRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="44dp"
+        android:onClick="teacherRegisterRegisterClick"
+        android:text="register"
+        app:layout_constraintStart_toEndOf="@+id/teacherRegisterBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterPasswordConfirmText" />
+
+    <Button
+        android:id="@+id/teacherRegisterBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:onClick="teacherRegisterBackClick"
+        android:text="back"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teacherRegisterButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/teacherRegisterPasswordConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password Again"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/teacherRegisterPasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterPasswordText" />
+
+    <EditText
+        android:id="@+id/teacherRegisterPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/teacherRegisterNameText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterNameText" />
+
+    <EditText
+        android:id="@+id/teacherRegisterNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/teacherRegisterEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/teacherRegisterEmailText" />
+
+    <TextView
+        android:id="@+id/teacherRegisterBasicText"
+        android:layout_width="216dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="85dp"
+        android:gravity="center"
+        android:text="For Teacher, Seller and Organizer"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

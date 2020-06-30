@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMilongaActivity">
+
+    <ImageButton
+        android:id="@+id/addMilongaImageButton"
+        android:layout_width="0dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="addMilongaImageClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/click_to_add_image" />
+
+    <EditText
+        android:id="@+id/addMilongaNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="Name of Milonga"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addMilongaImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/addMilongaImageButton" />
+
+    <EditText
+        android:id="@+id/addMilongaPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/addMilongaNameText"
+        app:layout_constraintTop_toBottomOf="@+id/addMilongaNameText" />
+
+    <EditText
+        android:id="@+id/addMilongaPhoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/addMilongaPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/addMilongaPriceText" />
+
+    <EditText
+        android:id="@+id/addMilongaAboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="About the Milonga"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/addMilongaPhoneText"
+        app:layout_constraintTop_toBottomOf="@+id/addMilongaPhoneText" />
+
+    <Button
+        android:id="@+id/addMilongaMapButton"
+        android:layout_width="190dp"
+        android:layout_height="79dp"
+        android:onClick="addMilongaMapClick"
+        android:text="click here to add location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMilongaAboutText"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <Button
+        android:id="@+id/addMilongaSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addMilongaSaveClick"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
